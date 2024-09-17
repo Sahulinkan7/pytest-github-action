@@ -15,4 +15,5 @@ def test_math_sub():
     
 def test_math_div():
     assert math_div(5,5)==1.0
+    assert math_div(10,2)==5.0
     
