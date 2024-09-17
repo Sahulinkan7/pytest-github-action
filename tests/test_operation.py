@@ -8,3 +8,8 @@ def test_math_add():
 def test_math_mul():
     assert math_mul(4,5)==20
     assert math_mul(5,7)==35
+    
+def test_math_sub():
+    assert math_sub(4,5)==-1
+    assert math_sub(99,90)==9
+    
