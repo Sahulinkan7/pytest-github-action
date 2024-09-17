@@ -13,3 +13,6 @@ def test_math_sub():
     assert math_sub(4,5)==-1
     assert math_sub(99,90)==9
     
+def test_math_div():
+    assert math_div(5,5)==1.0
+    
