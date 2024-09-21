@@ -3,9 +3,9 @@ import pytest
 
 @pytest.fixture
 def fixturetest():
-    print("pre test using fixture")
+    print("\npre test using fixture")
     yield
-    print("post test using fixture")
+    print("\npost test using fixture")
 
 def test_math_add(fixturetest):
     assert math_add(2,3)==5
