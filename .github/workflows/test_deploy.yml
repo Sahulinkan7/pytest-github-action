@@ -20,3 +20,9 @@ jobs:
           pip install pytest
       - name: test the code
         run: pytest -s -v
+      - name: upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: ouput_files
+          path: logs
+
