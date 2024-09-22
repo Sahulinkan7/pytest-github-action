@@ -3,11 +3,12 @@ import pytest
 import logging
 
 logger=logging.getLogger(__name__)
-
+import os
 
 # adding comments 
 @pytest.fixture
 def fixturetest():
+    logger.info(os.environ.get("TEST_SECRET","DEFAULT_VALUE")) # just for testing environment variables
     logger.info("pre test using fixture")
     yield "abc"
     logger.info("post test using fixture")
