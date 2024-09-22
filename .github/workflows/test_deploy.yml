@@ -46,3 +46,5 @@ jobs:
           name: ouput_files
       - name: downloaded files
         run: ls
+      - name: read logs
+        run: cat pytestlogs.log
