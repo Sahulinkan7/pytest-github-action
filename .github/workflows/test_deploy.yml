@@ -3,7 +3,7 @@ name: implement pytest with github action in python project
 on: [push, workflow_dispatch]
 jobs:
   checkout_and_test:
-    environment: TEST_ENVIRONMENT
+    # environment: TEST_ENVIRONMENT
     env:
       TEST_SECRET: ${{ secrets.MY_SECRET }}
     runs-on: ubuntu-latest
