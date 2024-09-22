@@ -1,11 +1,11 @@
 name: implement pytest with github action in python project
 
 on: [push, workflow_dispatch]
-env:
-  TEST_SECRET: ${{ secrets.TEST_SECRET }}
 jobs:
   checkout_and_test:
     runs-on: ubuntu-latest
+    env:
+      TEST_SECRET: ${{ secrets.MY_SECRET }}
     outputs:
       output1: ${{ steps.outputid.outputs.email }}
     steps:
